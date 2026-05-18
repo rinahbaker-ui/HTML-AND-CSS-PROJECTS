@@ -1,125 +1,55 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
     <head>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">  
-        <title>The Pet Shop</title>
+        <title>Creating Effects with CSS</title>
         <meta charset="UTF-8">
-        <meta name="description" content="Welcome to The Pet Shop! We offer kittens, puppies, fish, and more. Find your perfect pet today.">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="CSS/style.css">
     </head>
-
     <body>
-
-
         <!--NAVBAR-->
-        <nav class="nav-bar">
-    <ul id="nav-border">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-
-    <ul>
-        <li><a href="#cats">Cats And Kittens</a></li>
-        <li><a href="#Dogs">Dogs And Puppies</a></li>
-        <li><a href="#Rabbits">Rabbits</a></li>
-        <li><a href="#GuineaPigs">Guinea Pigs</a></li>
-        <li><a href="#GoldFish">Gold Fish</a></li>
-        <li><a href="#ExoticBirds">Exotic Birds</a></li>
-        <li><a href="#Video">Video</a></li>
-    </ul>
-</nav>
-        <header>
-           
-            <!--Header-->
-
-            <div>
-                
-                <h1 class="animate-text">Welcome To The PetShop!</h1>
-               
-            </div>
-
-        </header>
-        <!--Pet Images-->
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li class="drop">
+                    <a href="#">Images</a>
+                    <div class="rollover-menu">
+                        <a href="#image-1">Image 1</a>
+                        <a href="#image-2">Image 2</a>
+                        <a href="#image-3">Image 3</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!--IMAGES-->
         <section>
-            <div class="container">
-                <h2>Choose A Pet</h2>
-                <!--Cat Image-->
-                <div id="cats" class="column">
-                    <div class="image-container">
-                    <h3>Cats And Kittens</h3>
-                    <img src="https://aquitainevet.com/wp-content/uploads/2018/06/aquitaine-kittens.jpg" alt="Picture Of Kittens" width="800px" height="700px">
-                    <div> class="overlay"></div>
-                 </div>
-                </div>
-                <!--Dog Image-->
-                <div id="Dogs" class="column">
-                    <div class="image-container">
-                    <h3>Dog's And Puppies</h3>
-                    <img src="pexels-anntarazevich-5763583.jpg" alt="Dogs And Puppies" width="600px" height="700px">
-                    <div class="overlay"></div>
-                 </div>
-                </div>
-                <!--Rabbits-->
-                <div id="Rabbits" class="column">
-                    <div class="image-container">
-                    <h3>Rabbit's</h3>
-                    <img src="pexels-ponvintage-36175999.jpg" alt="Rabbits" width="600px" height="700px">
-                    <div class="overlay"></div>
-                 </div>
-                </div>
-
-                <!--Guinea Pigs-->
-                <div id="GuineaPigs" class="column">
-                    <div class="image-container">
-                    <h3>Guinea Pig's</h3>
-                    <img src="pexels-vladimirsrajber-14070138.jpg" alt="Guinea pigs" width="600px" height="700px">
-                    <div class="overlay"></div>
-                  </div>
-                </div>
-
-                <!--Gold Fish-->
-                <div id="GoldFish" class="column">
-                    <div class="image-container"></div>
-                    <h3>Gold Fish</h3>
-                    <img src="pexels-didsss-26756414.jpg" alt="Gold Fish" width="600px" height="700px">
-                    <div class="overlay"></div>
-                 </div>
-                </div>
-
-                
+         
+            <div class="image-container circle" id="image-3">
+            <img src="pexels-willianjusten-15829427.jpg">
+            </div>
+            </div>
+         
             
+            <div class="image-container" id="image-2">
+            <img src="pexels-subhash-suryawanshi-3409602-29282022.jpg" class="zoom">
             </div>
-        </section>
-        <!--footer-->
-        
-        <section>
-                <!--Videos-->
-                <div id="Video" class="container">
-                    <h3>Video</h3>
-                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/ng58pNPDDW4"></iframe>
-                </div>
+       
+         
+            <div class="image-container" id="image-3">
+                <div class="circle">
+            <img src="pexels-willianjusten-15829427.jpg">
+            </div>
+        </div>
 
         </section>
+
+        <!--FOOTER-->
         <footer>
-            <table>
-                <tr>
-                    <td>
-                        <p>The Pet Shop! &copy;</p>
-                    </td>
-                    <td>
-                        <p>15210 14th ave so</p>
-                        <p>Seattle, WA 98168</p>
-                    </td>
-                    <td>
-                        <p>206-248-1592</p>
-                    </td>
-                </tr>
-            </table>           
+            <div class="footer-text">
+                <p>The Tech Academy &copy;</p>
+            </div>
         </footer>
-
-    </body>
-
+    </body
 </html>
