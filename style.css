@@ -1,0 +1,214 @@
+/*NAVBAR*/
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 4; /*sets the position of the navbar in the stack layer 
+    so it is on top*/
+}
+
+ul{
+    list-style: none; /*removes the default bullet points from the navbar*/
+    background-color: #363636;
+    margin: -10px -10px 0px -10px; /*margin value order top, 
+    right,bottom, left*/
+    overflow: hidden; /*hides the overflow of the navbar*/
+    display: flex; /*displays the navbar as a flex container*/
+    align-items: center; /*aligns the items in the navbar to the center*/
+}
+
+a{
+    display: block; /*makes the links in the navbar 
+    display as block elements*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none; /*removes the underline from the links*/
+    text-transform: uppercase; /*transforms the text to uppercase*/
+    width: 100px;
+    padding: 30px;
+    text-align: center;
+    transition: background-color 0.4s ease-in; /*adds a transition effect to the background color when hovered*/
+}
+
+/*NAVBAR ROLLOVER EFFECTS*/
+a:hover, .drop:hover /*adds a hover effect to the links in the navbar and the dropdown menu*/{
+    background-color: rgb(228, 159, 0);
+    color: rgb(49, 49, 49);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7); /*adds a glow effect to the links when hovered*/
+    transition: background-color 0.3s ease-in; /*adds a transition effect to the background color when hovered*/
+} 
+/*styles and hides the anchor links within the images link
+div tag*/
+.rollover-menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0.2);
+}
+/*Displays the anchor links within the images link when hovered*/
+.drop:hover .rollover-menu{
+    display: block;
+}
+/*specifies the styles for the anchor links within the div tag
+that contains the rollover menu class selector*/
+.rollover-menu a{
+    color: #363636;
+}
+
+/*specifies the styles for the anchor links within the div tag
+ that contains the rollover menu class selector when hovered*/
+.rollover-menu a:hover{
+    color: white;
+
+}
+
+.rollover-menu a:hover:nth-child(1){
+    background-color: rgb(117, 20, 20);
+}
+
+.rollover-menu a:hover:nth-child(2){
+    background-color: rgb(87, 7, 7);
+}
+
+.rollover-menu a:hover:nth-child(3){
+    background-color: rgb(48, 2, 2);
+}
+
+/*FOOTER*/
+footer{
+    background-color: #363636;
+    margin: 30px -10px -10px -10px; /*margin value order top, right, bottom, left*/
+    overflow: hidden; /*hides the overflow of the footer*/
+    height: 70px;
+}
+
+/*styles the text in the footer*/
+.footer-text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    color: rgb(228, 159, 0);
+    text-align: center;
+}
+
+/*images*/
+img{
+    width: 700px;
+    height: 550px;
+    display: block;
+}
+/*creates a container for each image to be held in*/
+.image-container{
+    position: relative;
+    width: 700px;
+    margin: 120px auto 0;
+}
+
+#image-1{
+    position: relative;
+}
+
+#image-3{
+    padding-bottom: 170px;
+}
+
+#image-3{
+    padding-bottom: 170px;
+    overflow: visible;
+}
+    
+/* image1 */
+/*overlays a grey dark cover over the image*/
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 550px;
+    background-color: rgb(90, 90, 90);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+/*triggers the overlay to appear when the image is hovered 60%*/
+#image-1:hover .overlay{
+    opacity: 0.6;
+}
+
+
+#image-3{
+    padding-bottom: 170px;
+    overflow: visible;
+}
+
+/* image 2 */
+/*creates image 2 to enlarge created a class in html image 2*/
+.zoom{
+    transform: scale(1);
+    transition: 0.5s ease-out;
+    z-index: 3;
+}
+
+.zoom:hover{
+    transform: scale(1.5);
+    transition: 5s ease-out;
+}
+
+/* image 3 */
+.circle{
+    position: relative;
+    margin: 0;
+    overflow: visible;
+}
+
+.circle::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(224, 224, 224, 0.8);
+    transform: translate(-50%, -50%);
+    transition: width 0.7s ease, height 0.7s ease, opacity 0.7s ease;
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+    animation: burst-reverse 1s;
+}
+
+.circle:hover::before{
+    width: 300%;
+    height: 300%;
+    opacity: 0.7;
+}
+
+/*creates a growing circle effect when the image is hovered*/
+@keyframes burst{
+    0%{
+        opacity: 0.2;
+        background-color: rgb(224, 224, 224);
+    }
+    100%{
+        opacity: 0.7;
+        background-color: rgb(224, 224, 224);
+        width: 300%;
+        height: 300%;
+    }
+}
+
+@keyframes burst-reverse{
+    0%{
+        opacity: 0.7;
+        background-color: rgb(224, 224, 224);
+        width: 300%;
+        height: 300%;
+    }
+    100%{
+        opacity: 0.2;
+        background-color: rgb(224, 224, 224);
+       
+    }
+}
+
