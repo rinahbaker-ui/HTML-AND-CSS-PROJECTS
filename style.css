@@ -94,38 +94,42 @@ footer{
 
 /*images*/
 img{
-    width: 700px;
-    height: 550px;
-    display: block;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    max-width: 700px;
 }
 /*creates a container for each image to be held in*/
 .image-container{
     position: relative;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     margin: 120px auto 0;
+    display: block;
+    text-align: center;
 }
 
 #image-1{
     position: relative;
-}
-
-#image-3{
-    padding-bottom: 170px;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 120px auto 0;
 }
 
 #image-3{
     padding-bottom: 170px;
     overflow: visible;
 }
-    
+
 /* image1 */
 /*overlays a grey dark cover over the image*/
 .overlay{
     position: absolute;
     top: 0;
     left: 0;
-    width: 700px;
-    height: 550px;
+    width: 100%;
+    height: 100%;
     background-color: rgb(90, 90, 90);
     opacity: 0;
     transition: 0.5s ease;
@@ -133,12 +137,6 @@ img{
 /*triggers the overlay to appear when the image is hovered 60%*/
 #image-1:hover .overlay{
     opacity: 0.6;
-}
-
-
-#image-3{
-    padding-bottom: 170px;
-    overflow: visible;
 }
 
 /* image 2 */
