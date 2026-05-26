@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+*
+{
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: -8px -8px 0px -8px;
+    background-color: rgb(1, 128, 106);
+    border-bottom: 5px solid rgb(247, 177, 188);
+}
+
+a{
+    display: block;
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(247, 177, 188);
+    text-align: center;
+    min-width: 100px;
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in;
+}
+
+a:hover, .drop:hover a:only-of-type{
+    background-color: rgb(149, 238, 223);
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+    transition: background-color 0.3s ease-in;
+}
+
+.drop{
+    position: relative;
+}
+
+.rollover-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    flex-direction: column;
+}
+
+.rollover-menu a{
+    width: 100%;
+    padding: 12px 20px;
+    text-align: left;
+    display: block;
+}
+
+.drop:hover .rollover-menu{
+    display: flex;
+}
+
+.rollover-menu a{
+    color: rgb(0, 80, 67);
+}
+
+.rollover-menu a:hover{
+    background-color: rgb(149, 238, 223);
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(90, 90, 90, 0.2);
+}
+
+.rollover-menu a:nth-child(1){
+    border-top: 5px solid rgb(238, 118, 136);
+}
+
+footer{
+    align-items: center;
+    margin: 0px -8px -8px -8px;
+    background-color: rgb(1, 128, 106);
+    border-top: 5px solid rgb(247, 177, 188);
+    bottom: 0;
+}
+
+table{
+   width: 100%;
+   margin: 0px -8px -8px -8px;
+   background-color: rgb(1, 128, 106);
+   border-top: 5px solid rgb(247, 177, 188);
+}
+
+td{
+    width: 33%;
+}
+
+td p{
+    font-family: 'josefin slab', serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(247, 177, 188);
+}
+
+.container{
+    display: inline-block;
+    background-size: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+
+
+.column img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4),
+        0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+.column img{
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 80px;
+    color:rgb(0, 80, 67);
+    text-align: center;
+}
+
+h2, h3, h4{
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+}
+
+h2{
+    color:rgb(0, 80, 67);
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: rgb(247, 177, 188);
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: josefin slab, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 80, 67);
+    text-align: center;
+}
+
+.column{
+    float: left;
+    width: 48%;
+    padding: 10px;
+}
+
+.column img:nth-child(-n + 7){
+
+    width: 500px;
+    height: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4),
+    0 6px 20px 0  rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    align-items: center;
+    margin: 0px -8px -8px -8px;
+    background-color: rgb(1, 128, 106);
+    border-top: 5px solid rgb(247, 177, 188);
+    bottom: 0;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    width: 33%;
+}
+
+td p{
+    font-family: 'josefin slab', serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(247, 177, 188);
+}
+
+.container{
+    display: inline-block;
+    background-size: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+
+h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 80px;
+    color:rgb(0, 80, 67);
+    text-align: center;
+}
+
+h2, h3, h4{
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+}
+
+h2{
+    color:rgb(0, 80, 67);
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: rgb(247, 177, 188);
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: josefin slab, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 80, 67);
+    text-align: center;
+}
+
+.column{
+    float: left;
+    width: 48%;
+    padding: 10px;
+}
+
+
+
+.column img:nth-child(-n + 7){
+    width: 500px;
+    height: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4),
+    0 6px 20px 0  rgba(0, 0, 0, 0.2);
+}
+
+.recipe-container{
+    width: 500px;
+    height: 350px;
+    margin: 100px auto 180px;
+}
+
