@@ -286,3 +286,22 @@ p{
     margin: 100px auto 180px;
 }
 
+
+#about{
+    padding: 60px 30px;
+    background-color: rgb(249, 238, 240);
+    text-align: center;
+}
+
+#about p{
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
