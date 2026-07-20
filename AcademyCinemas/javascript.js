@@ -64,3 +64,43 @@ function buyTickets() {
 
     ticketToast.show();
 }
+
+// Shrinks header size when the document is scrolled down by 80 pixels
+$(document).on("scroll", function () {
+
+    // When the webpage is scrolled down more than 50px
+    if ($(document).scrollTop() > 50) {
+
+        // Add the nav-shrink class
+        $("nav").addClass("nav-shrink");
+
+        // Move the mobile dropdown menu up slightly
+        $("div.navbar-collapse").css("margin-top", "-6px");
+
+    } else {
+
+        // Remove the nav-shrink class
+        $("nav").removeClass("nav-shrink");
+
+        // Return the menu to its original position
+        $("div.navbar-collapse").css("margin-top", "14px");
+    }
+
+});
+
+// Close mobile menu when a navigation link is clicked
+$(document).ready(function () {
+
+    // When a nav link or dropdown item is clicked
+    $(".navbar-nav").on(
+        "click",
+        ".nav-link:not('.dropdown-toggle'), .dropdown-item",
+        function () {
+
+            // Close the mobile menu
+            $(".navbar-collapse").collapse("hide");
+
+        }
+    );
+
+});
